@@ -1,38 +1,46 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# 这里是主配置文件，本地调试时不支持直接热更新，必须手动更新或者启用一个检视的依赖（检视代码变化并执行相关指令脚本达到热更新效果）
 
 # Theme Settings
 #
-# Review documentation to determine if you should use `theme` or `remote_theme`
+# 这里是非fork版本的教程
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
+# 非fork版本才需要
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+
+# 决定网站各页面背景风格（颜色）："air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# 预览：https://mmistakes.github.io/minimal-mistakes/docs/configuration/#theme
+minimal_mistakes_skin    : "default" 
 
 # Site Settings
+
+# 语言
+# 参考目录：https://learn.microsoft.com/en-us/previous-versions/commerce-server/ee825488(v=cs.20)?redirectedfrom=MSDN
 locale                   : "en-US"
-rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : # true, false (default)
-words_per_minute         : 200
-enable_copy_code_button  : # true, false (default)
-copyright                : # "copyright" name, defaults to site.title
-copyright_url            : # "copyright" URL, defaults to site.url
+
+# Site title
+# 其中很多键都可以在发行新页面的时候重写
+rtl                      : # 跟随希伯来语等RTL语言转换页面方向，默认为false
+title                    : "Lihong Qiao" # 网站标题 
+title_separator          : "-" # 网站名称内部分隔符
+subtitle                 : # 子标题（默认无）
+name                     : "Lihong Qiao"
+description              : "重庆邮电大学 副教授 硕士生导师"
+url                      : https://tobegold574.github.io/MM-demo.github.io
+baseurl                  : /MM-demo.github.io # 主页面
+repository               : "tobegold574/MM-demo.github.io"
+teaser                   : # 发布的帖子的简介照片
+logo                     : # logo，显示网站名称旁边
+breadcrumbs              : # 帮助读者理清帖子的从属关系（默认为flase），如果不发帖子就不用
+words_per_minute         : 160 # 预设阅读时间
+enable_copy_code_button  : # 是否为代码提供一键复制功能
+
+
+# 评论系统，多个服务可选（现在关闭）
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
@@ -62,17 +70,23 @@ comments:
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+
+# 防恶意脚本，人工智能判定API（选图片什么的），需申请
 reCaptcha:
   siteKey                :
   secret                 :
+
+# 读者订阅服务（博客）
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+
+# 是否支持搜索
+search                   : # 默认为false
+search_full_content      : # 默认为false
+search_provider          : # 默认由lunr提供服务
 lunr:
-  search_within_pages    : # true, false (default)
+  search_within_pages    : # 是否检索所有页面
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -81,21 +95,22 @@ algolia:
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
-# SEO Related
+
+# SEO优化 
 google_site_verification :
 bing_site_verification   :
 naver_site_verification  :
 yandex_site_verification :
 baidu_site_verification  :
 
-# Social Sharing
+# 社媒
 twitter:
   username               :
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : # 博客文章缺乏标题图片时的默认后备图片
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -103,25 +118,25 @@ social:
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
-# Analytics
+# 用于分析网站访问情况
 analytics:
-  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : # 默认关闭，有多个服务可选："google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          :
     anonymize_ip         : # true, false (default)
 
 
-# Site Author
+# 网站作者相关
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "乔丽红（Lihong Qiao）"
+  avatar           : "assets/images/头像.png"
+  bio              : "副教授 硕士生导师"
+  location         : "重庆邮电大学"
+  email            : qiaolh@cqupt.edu.cn
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "https://qiaolh@cqupt.edu.cn"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -138,7 +153,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
-# Site Footer
+# 网站页脚
 footer:
   links:
     - label: "Twitter"
@@ -302,24 +317,22 @@ tag_archive:
 #     tag: /tags/:name/
 
 
-# HTML Compression
-# - https://jch.penibelst.de/
+# HTML压缩配置
 compress_html:
-  clippings: all
+  clippings: all        # 对所有文件都压缩
   ignore:
-    envs: development
+    envs: development   # 开发环境不压缩
 
 
 # Defaults
 defaults:
-  # _posts
+  # 配置pages的front matter，如需自定义可直接在md文件中重写覆盖
   - scope:
-      path: ""
-      type: posts
+      path: ""      # 适用于所有_pages文件夹中的文件
+      type: pages   # 应用于_pages文件夹
     values:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
       share: true
       related: true
