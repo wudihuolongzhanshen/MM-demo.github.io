@@ -1,10 +1,9 @@
 ---
-layout: single
-permalink: /homepage
+permalink: /
 title: "个人主页"
 author_profile: true
 redirect_from:
-    - /
+    - /homepage
 ---
 
 **基本信息**
