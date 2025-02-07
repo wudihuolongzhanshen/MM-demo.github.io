@@ -3,6 +3,7 @@ layout: single
 permalink: /homepage
 title: "个人主页"
 author_profile: true
+share: false
 ---
 
 **基本信息**
