@@ -334,5 +334,5 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      share: true
+      share: false
       related: true
