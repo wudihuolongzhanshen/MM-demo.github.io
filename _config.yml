@@ -135,7 +135,7 @@ author:
   email            : qiaolh@cqupt.edu.cn
   links:
     - label: "Phone"
-      icon: "fas fa-phone"
+      icon: "fas fa-fw fa-phone"
       url: "tel:+8618623717036"
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"

@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "个人主页"
-    url: /homepage
+    url: /
   - title: "科研论文"
     url: /publications
   - title: "科研项目"
