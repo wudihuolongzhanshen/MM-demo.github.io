@@ -31,7 +31,7 @@ subtitle                 : # 子标题（默认无）
 name                     : "Lihong Qiao"
 description              : "重庆邮电大学 副教授 硕士生导师"
 url                      : https://qiaolh.cn
-baseurl                  : / # 主页面
+baseurl                  : # 不是github用不着
 repository               : "tobegold574/MM-demo.github.io"
 teaser                   : # 发布的帖子的简介照片
 logo                     : # logo，显示网站名称旁边
