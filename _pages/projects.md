@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /projects
+permalink: /projects/
 title: "科研项目"
 author_profile: true
 ---

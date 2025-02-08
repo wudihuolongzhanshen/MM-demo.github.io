@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /patents
+permalink: /patents/
 title: "专利情况"
 author_profile: true
 ---

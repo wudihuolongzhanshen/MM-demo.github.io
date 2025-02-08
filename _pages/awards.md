@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /awards
+permalink: /awards/
 title: "获奖情况"
 author_profile: true
 ---

@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /publications
+permalink: /publications/
 title: "科研论文"
 author_profile: true
 ---
