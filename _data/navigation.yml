@@ -2,8 +2,6 @@
 main:
   - title: "个人主页"
     url: /
-  - title: "2025招生"
-    url: /recruitment
   - title: "科研论文"
     url: /publications
   - title: "科研项目"
